@@ -1,8 +1,10 @@
 const express = require("express")
 const cors = require("cors")
-const app = express()
 const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser')
 require('dotenv').config()
+const app = express()
+app.use(cookieParser())
 app.use(cors(
     {
         origin: [
@@ -14,6 +16,7 @@ app.use(cors(
         credentials: true
     }
 ))
+
 app.use(express.json())
 const port = process.env.PORT || 5000
 
