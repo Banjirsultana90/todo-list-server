@@ -7,8 +7,8 @@ app.use(cors(
     {
         origin: [
             'http://localhost:5173',
-            // 'https://survey-project-aadef.firebaseapp.com',
-            // 'https://survey-project-aadef.web.app'
+           'https://todo-list-project-5716d.web.app/',
+          'https://todo-list-project-5716d.firebaseapp.com/'
 
         ],
         credentials: true
